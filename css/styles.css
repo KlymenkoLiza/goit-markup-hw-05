@@ -31,6 +31,9 @@ h1,h2,h3,h4,h5,h6,p {
 img {
     display: block;
 }
+button {
+    border: none;
+}
 
 /* ==================HEADER=================== */
 
@@ -594,6 +597,12 @@ padding: 24px;
 .modal-close {
     display: block;
     margin-left: auto;
+    border-radius: 100%;
+    background-color: #E7E9FC;
+    fill: #2e2f42;
+    /* box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+    stroke-width: 1px;
+        stroke: rgba(0, 0, 0, 0.1); */
     
 }
 .modal-title {
@@ -664,4 +673,64 @@ transition: fill 300ms linear;
         letter-spacing: 0.04em;
         color: rgba(46, 47, 66, 0.4);
     
+}
+
+.modal-field {
+    /* display: flex; */
+}
+
+.check-text {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+        line-height: 1.16667;
+        letter-spacing: 0.04em;
+        color: #8e8f99;
+}
+
+.modal-chek-link {
+line-height: 1.33333;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #4d5ae5;
+    margin-left: 4px;
+}
+.modal-span {
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+        border: 1px solid rgba(46, 47, 66, 0.4);
+        fill: transparent;
+display: flex;
+align-items: center;
+justify-content: center;
+
+    }
+
+.modal-chek:checked + .check-text span {
+    background-color: #404BBF;
+    border: none;
+    fill: #f4f4fd;
+}
+.button-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-button {
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        text-align: center;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+            padding: 16px 32px;
+            width: 169px;
+            height: 56px;
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+                background: #4d5ae5;
+                margin-top: 24px;
 }
